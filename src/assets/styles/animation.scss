@@ -1,0 +1,117 @@
+@keyframes rollInRight {
+	from {
+		transform: translate3d(200%, 0, 0) rotate(180deg);
+		opacity: 0;
+	}
+
+	to {
+		transform: translate3d(0, 0, 0) rotate(-360deg);
+		opacity: 1;
+	}
+}
+@keyframes rollInLeft {
+	from {
+		transform: translateX(-200%) rotate(-180deg);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0) rotate(360deg);
+		opacity: 1;
+	}
+}
+
+
+@keyframes bounceRotateInRight {
+	0% {
+		transform: translateX(500%) rotateZ(-540deg);
+	}
+
+	63% {
+		transform: translateX(15px) rotateZ(20deg);
+	}
+
+	75% {
+		transform: translateX(-7px) rotateZ(-7deg);
+	}
+
+	85% {
+		transform: translateX(4px) rotateZ(4deg);
+	}
+
+	95% {
+		transform: translateX(-2px) rotateZ(-2deg);
+	}
+
+	100% {
+		transform: translateX(0px) rotateZ(0deg);
+	}
+}
+
+@keyframes bounceInDown {
+	from,
+	60%,
+	75%,
+	90%,
+	to {
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -3000px, 0);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translate3d(0, 25px, 0);
+	}
+
+	75% {
+		transform: translate3d(0, -10px, 0);
+	}
+
+	90% {
+		transform: translate3d(0, 5px, 0);
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes zoomInUp {
+    from {
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+@keyframes fBig {
+	from {
+		font-size: 20px;
+	}
+	to {
+		font-size: 25px;
+	}
+}
+
+/* 从底部快速淡入 */
+@keyframes fadeBigInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -2000px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
